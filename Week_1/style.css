@@ -1,0 +1,113 @@
+@font-face {
+    font-family: XanhMono;
+    src: url('font/XanhMono-Regular.ttf');
+}
+
+#img_text1 {
+  position: relative;
+  display: inline-flex;
+}
+
+#img_text2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#img_text3{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#helpscan, #cryptocard #fbdb {
+  opacity: 0;
+  flex-basis: 70%;
+}
+
+.helpscan_text, .crypto_text, .fbdb_text{
+  opacity: 0;
+  flex-basis: 30%;
+}
+
+@media screen and (min-width: 1200px){ 
+  body { 
+    background-color: #000000;
+  }
+
+  #helpscan{
+    opacity: 100%;
+  
+  }
+  .helpscan_text{
+    opacity: 100%;
+    color: #ffffff;
+    font-family: XanhMono;
+    font-size: 25px;
+    margin-left: 27px;
+  }
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1200px){ 
+  body { 
+    background-color: #c0c0c0;
+  }
+
+  #img_text2{
+    display: inline-flex;
+  }
+
+  #cryptocard{
+  opacity: 100%;
+  }
+
+  .crypto_text{
+  opacity: 100%;
+  color: #ffffff;
+  font-family: XanhMono;
+  font-size: 25px;
+  margin-left: 27px;
+  }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1050px){ 
+  body { 
+    background-color: #ff4500;
+  }
+
+  #img_text3{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 50%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  #fbdb{
+    opacity: 100%;
+    width: 700px;
+  }
+
+  .fbdb_text{
+  opacity: 100%;
+  color: #ffffff;
+  font-family: XanhMono;
+  font-size: 25px;
+  margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 850px){ 
+  body { 
+    background-color: #d70a53;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 650px){ 
+  body { 
+    background-color: #00bfff;
+  }
+}
